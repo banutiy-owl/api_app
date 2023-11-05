@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Data</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, tr {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <h2>Books Data</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Year</th>
+        </tr>
+        {% for book in data %}
+            <tr>
+                <td>{{ book.name }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.description }}</td>
+                <td>{{ book.year }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+curl -v http://localhost:5000/books
+VERBOSE: GET http://localhost:5000/books with 0-byte      
+payload
+VERBOSE: received 3090-byte response of content type      
+text/html; charset=utf-8
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : <!DOCTYPE html> 
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta
+                    http-equiv="X-UA-Compatible"
+                    content="IE=edge">
+                        <meta name="viewport"
+                    content="width=device-width,
+                    initial-scale=1.0">
+                    ...
+RawContent        : HTTP/1.1 200 OK
+                    Connection: close
+                    Content-Length: 3090
+                    Content-Type: text/html;
+                    charset=utf-8
+                    Date: Sun, 05 Nov 2023 19:59:28 GMT   
+                    Server: Werkzeug/3.0.1 Python/3.9.7   
+
+                    <!DOCTYPE html>
+                    <html lang...
+Forms             : {}
+Headers           : {[Connection, close],
+                    [Content-Length, 3090],
+                    [Content-Type, text/html;
+                    charset=utf-8], [Date, Sun, 05 Nov    
+                    2023 19:59:28 GMT]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 3090
+
+
+
+127.0.0.1 - - [05/Nov/2023 20:59:28] "GET /books HTTP/1.1" 200 
